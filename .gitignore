@@ -1,7 +1,5 @@
-slumbot
-slumbot/*
-C:\Users\rbris\OneDrive\Desktop\OPENGYM_POKER\botai\slumbot
-C:\Users\rbris\OneDrive\Desktop\OPENGYM_POKER\botai\slumbot\*
-C:\Users\rbris\OneDrive\Desktop\OPENGYM_POKER\botai\poker-DQN
-C:\Users\rbris\OneDrive\Desktop\OPENGYM_POKER\botai\poker-DQN\*
-C:\Users\rbris\OneDrive\Desktop\OPENGYM_POKER\botai\game\__pycache__
+./slumbot
+./slumbot/*
+./poker-DQN
+./poker-DQN\*
+./game\__pycache__
