@@ -3,3 +3,8 @@
 ./poker-DQN
 ./poker-DQN\*
 ./game\__pycache__
+slumbot
+slumbot/*
+poker-DQN
+poker-DQN\*
+game/__pycache__
