@@ -16,7 +16,7 @@ SCALE = 1
 WIDTH, HEIGHT = 1280, 720  # you can resize this dynamically afterwards
 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
-pygame.display.set_caption("Poker By Steven Gong")
+pygame.display.set_caption("RichieRich_Project")
 
 WHITE = (255, 255, 255)
 BLACK = (25, 25, 25)
