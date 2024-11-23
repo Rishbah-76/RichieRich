@@ -163,6 +163,59 @@ python src/abstraction.py
 
 ---
 
+## Results and Analysis
+
+### 1. CFR Abstraction for Preflop Strategy
+![CFR Abstraction for Preflop Strategy](./graph/cfr_abstraction.png)
+
+- **Observation**: The graph shows the declining performance in terms of "Earnings (BB/100)" over the course of 7,000 hands.
+- **Insights**:
+  - **Raw BB/100** reflects the performance of the CFR abstraction-based strategy.
+  - **Baseline BB/100** represents the unoptimized approach without abstraction.
+  - While the CFR abstraction model improves initial performance, the lack of postflop strategies results in long-term decline.
+
+---
+
+### 2. Double DQN Learning Curve
+![Double DQN Learning Curve](./graph/dqn.png)
+
+- **Observation**: The average reward fluctuates across 100,000 episodes, with an upward trend indicating gradual improvement.
+- **Insights**:
+  - **Double DQN** leverages reinforcement learning to optimize actions in Limit Hold'em.
+  - Fluctuations highlight the complexity of balancing exploration and exploitation.
+  - The upward trend suggests that the DQN model learns to improve over time, despite the challenges of the dynamic poker environment.
+
+---
+
+### 3. CFR Preflop and Postflop Comparison
+![CFR Preflop and Postflop Comparison](./graph/cfr_preflop.png)
+
+- **Observation**: The graph shows **Earnings (BB/100)** for both baseline and CFR strategies over 10,000 hands.
+- **Insights**:
+  - **Raw CFR Strategy** slightly outperforms the baseline initially but faces similar long-term decline.
+  - Indicates the need for stronger postflop strategies and more robust abstraction techniques to sustain performance.
+
+---
+
+## Key Learnings and Future Directions
+
+1. **CFR Effectiveness**:
+   - CFR-based strategies handle imperfect information well, especially in preflop scenarios.
+   - Postflop abstraction integration is critical for consistent performance.
+
+2. **DQN Learning**:
+   - DQN demonstrates success in reinforcement learning for poker but requires stabilization to achieve reliable results.
+
+3. **Abstraction Limitations**:
+   - Preflop-only abstractions provide limited context for long-term decision-making.
+
+4. **Future Directions**:
+   - Develop hybrid models combining CFR, DQN, and Monte Carlo techniques.
+   - Refine abstraction methods and enhance postflop strategies.
+   - Optimize computational efficiency for large-scale state space handling.
+
+---
+
 ## Contributing
 Contributions are welcome! If you'd like to add features or fix bugs:
 1. Fork the repository.
@@ -181,7 +234,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgments
 - Inspired by foundational poker AI research and projects, including CFR, MCMC, and DQN techniques.
 - Thanks to the Pygame community for supporting the graphical interface.
-- Special mentions to Slumbot and other poker AI pioneers for inspiration.
+- Special mentions to Slumbot, Steven Gong(https://github.com/Gongsta/Poker-AI), Martin Zinkevich, Et.al (CFR) and other poker AI pioneers for inspiration.
 
 --- 
 
